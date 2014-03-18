@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace QuakeLogParser
 {
+    /// <summary>
+    /// Classe que faz a leitura do arquivo e interpreta as informações.
+    /// </summary>
     public class LogParser
     {
 

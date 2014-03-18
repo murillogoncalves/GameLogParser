@@ -1,1 +1,2 @@
 C:\Users\Murillo\Desktop\QuakeLogParser\QuakeLogParser\bin\Debug\QuakeLogParser.exe.config
+C:\Users\Murillo\GameLogParser\C#\QuakeLogParser\bin\Debug\QuakeLogParser.exe.config

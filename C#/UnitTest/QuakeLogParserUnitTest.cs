@@ -4,6 +4,9 @@ using QuakeLogParser;
 
 namespace UnitTest
 {
+    /// <summary>
+    /// Testes unitários.
+    /// </summary>
     [TestClass]
     public class QuakeLogParserUnitTest
     {
