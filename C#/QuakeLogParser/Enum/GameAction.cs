@@ -9,7 +9,7 @@ namespace QuakeLogParser.Enum
     /// <summary>
     /// Possíveis ações apresentadas no jogo
     /// </summary>
-    public enum GameAction
+    public enum eGameAction
     {
         InitGame,
         ShutdownGame,

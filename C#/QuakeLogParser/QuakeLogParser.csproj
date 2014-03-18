@@ -44,6 +44,9 @@
     <Compile Include="Enum\GameAction.cs" />
     <Compile Include="Enum\MeansOfDeath.cs" />
     <Compile Include="LogParser.cs" />
+    <Compile Include="Model\PlusTask\Game.cs" />
+    <Compile Include="Model\PlusTask\Games.cs" />
+    <Compile Include="Model\PlusTask\KillsByMean.cs" />
     <Compile Include="Model\Task1\Game.cs" />
     <Compile Include="Model\Task1\Games.cs" />
     <Compile Include="Model\Task1\Player.cs" />
@@ -57,7 +60,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\ParsedInfo\" />
-    <Folder Include="Model\Task2\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

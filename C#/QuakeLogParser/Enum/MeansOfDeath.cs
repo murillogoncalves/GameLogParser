@@ -9,7 +9,7 @@ namespace QuakeLogParser.Enum
     /// <summary>
     /// Modos de morte
     /// </summary>
-    public enum MeansOfDeath
+    public enum eMeansOfDeath
     {
         MOD_UNKNOWN,
         MOD_SHOTGUN,
