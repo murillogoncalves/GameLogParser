@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuakeLogParser.Model.Task1
+namespace QuakeLogParser.Model
 {
-    public class Player
+    public class Games
     {
-        public string nome { get; set; }
+        public List<Game> game { get; set; }
     }
 }

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using QuakeLogParser.Enum;
 
-namespace QuakeLogParser.Model.PlusTask
+namespace QuakeLogParser.Model
 {
     public class KillsByMean
     {
