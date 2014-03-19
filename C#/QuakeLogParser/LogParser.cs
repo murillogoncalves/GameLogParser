@@ -70,10 +70,10 @@ namespace QuakeLogParser
         }
 
         /// <summary>
-        /// 
+        /// Atualiza informações de mortes dos jogadores.
         /// </summary>
-        /// <param name="game"></param>
-        /// <param name="row"></param>
+        /// <param name="game">Jogo que está sendo atualizado</param>
+        /// <param name="row">Linha do arquivo de log contendo as informações</param>
         public void Kill(Game game, string row)
         {
             ////Expressão regular para recuperar que matou, quem foi morto e o modo de morte
