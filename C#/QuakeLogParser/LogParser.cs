@@ -36,7 +36,7 @@ namespace QuakeLogParser
         public void ClientConnect(Game game, string row)
         {
             //Expressão regular para recuperar Id e Nome do jogador
-            Regex regex = new Regex("/\\W\\W(?<id>[0-9]+)/");
+            Regex regex = new Regex(@"(\d)[^\d]*$");
             MatchCollection info = regex.Matches(row);
 
             //Recupera informações da linha
@@ -56,13 +56,14 @@ namespace QuakeLogParser
         /// <param name="row">Linha do arquivo de log contendo as informações</param>
         public void ClientUserInfoChanged(Game game, string row)
         {
-            //Expressão regular para recuperar Id e Nome do jogador
-            Regex regex = new Regex("/\\W\\W(?<id>[0-9]+) n\\\\(?<nome>[a-zA-Z\\s]+)/");
-            MatchCollection info = regex.Matches(row);
+            ////Expressão regular para recuperar Id e Nome do jogador
+            //Regex regex = new Regex(@"/\W\W([0-9]+) n\\([a-zA-Z\s]+)/");
+            //MatchCollection info = regex.Matches(row);
 
             //Recupera informações da linha
-            int id = Int32.Parse(info[0].Value);
-            string nome = info[1].Value;
+            int id = Int32.Parse(row.Substring(row.IndexOf(": ") + 2, 1).Trim());
+            string nomeJogador = row.Substring(row.IndexOf(@"n\") + 2);
+            string nome = nomeJogador.Substring(0, nomeJogador.IndexOf(@"\"));
 
             //Seta o novo nome do jogador
             game.players.Find(p => p.id == id).nome = nome;
@@ -75,14 +76,19 @@ namespace QuakeLogParser
         /// <param name="row"></param>
         public void Kill(Game game, string row)
         {
-            //Expressão regular para recuperar que matou, quem foi morto e o modo de morte
-            Regex regex = new Regex("/\\W\\W([0-9]+)\\s([0-9]+)\\s([0-9]+)/");
-            MatchCollection info = regex.Matches(row);
+            ////Expressão regular para recuperar que matou, quem foi morto e o modo de morte
+            //Regex regex = new Regex(@"/\W\W([0-9]+)\s([0-9]+)\s([0-9]+)/");
+            //MatchCollection info = regex.Matches(row);
 
             //Recupera informações da linha
-            Player killer = game.players.Find(p => p.id == Int32.Parse(info[0].Value));
-            Player killed = game.players.Find(p => p.id == Int32.Parse(info[1].Value));
-            eMeansOfDeath mean = (eMeansOfDeath)Int32.Parse(info[2].Value);
+            string informacoes = row.Substring(row.IndexOf(": ") + 2);
+            informacoes = informacoes.Substring(0, informacoes.IndexOf(":"));
+            string[] info = informacoes.Split(' ');
+
+            //Recupera informações da linha
+            Player killer = game.players.Any(q => q.id == Int32.Parse(info[0])) ? game.players.Find(p => p.id == Int32.Parse(info[0])) : new Player { id = Int32.Parse(info[0]) };
+            Player killed = game.players.Find(p => p.id == Int32.Parse(info[1]));
+            eMeansOfDeath mean = (eMeansOfDeath)Int32.Parse(info[2]);
 
             //Atualiza total de mortes do jogo
             game.totalKills++;

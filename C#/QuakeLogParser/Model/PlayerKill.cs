@@ -10,5 +10,11 @@ namespace QuakeLogParser.Model
     {
         public Player player { get; set; }
         public int kills { get; set; }
+
+        public PlayerKill()
+        {
+            this.player = new Player();
+            this.kills = 0;
+        }
     }
 }

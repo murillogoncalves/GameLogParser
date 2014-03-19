@@ -9,5 +9,10 @@ namespace QuakeLogParser.Model
     public class Games
     {
         public List<Game> game { get; set; }
+
+        public Games()
+        {
+            this.game = new List<Game>();
+        }
     }
 }

@@ -12,5 +12,13 @@ namespace QuakeLogParser.Model
         public List<Player> players { get; set; }
         public List<PlayerKill> playersKills { get; set; }
         public List<KillsByMean> killsByMeans { get; set; }
+
+        public Game()
+        {
+            this.totalKills = 0;
+            this.players = new List<Player>();
+            this.playersKills = new List<PlayerKill>();
+            this.killsByMeans = new List<KillsByMean>();
+        }
     }
 }

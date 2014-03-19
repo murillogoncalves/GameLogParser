@@ -11,5 +11,10 @@ namespace QuakeLogParser.Model
     {
         public eMeansOfDeath mean { get; set; }
         public int numero { get; set; }
+
+        public KillsByMean()
+        {
+            
+        }
     }
 }

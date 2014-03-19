@@ -1,0 +1,7 @@
+C:\Users\Murillo\GameLogParser\C#\UnitTest\bin\Debug\UnitTest.dll
+C:\Users\Murillo\GameLogParser\C#\UnitTest\bin\Debug\UnitTest.pdb
+C:\Users\Murillo\GameLogParser\C#\UnitTest\bin\Debug\QuakeLogParser.exe
+C:\Users\Murillo\GameLogParser\C#\UnitTest\bin\Debug\QuakeLogParser.pdb
+C:\Users\Murillo\GameLogParser\C#\UnitTest\obj\Debug\UnitTest.csprojResolveAssemblyReference.cache
+C:\Users\Murillo\GameLogParser\C#\UnitTest\obj\Debug\UnitTest.dll
+C:\Users\Murillo\GameLogParser\C#\UnitTest\obj\Debug\UnitTest.pdb

@@ -1,2 +1,7 @@
 C:\Users\Murillo\Desktop\QuakeLogParser\QuakeLogParser\bin\Debug\QuakeLogParser.exe.config
 C:\Users\Murillo\GameLogParser\C#\QuakeLogParser\bin\Debug\QuakeLogParser.exe.config
+C:\Users\Murillo\GameLogParser\C#\QuakeLogParser\bin\Debug\QuakeLogParser.exe
+C:\Users\Murillo\GameLogParser\C#\QuakeLogParser\bin\Debug\QuakeLogParser.pdb
+C:\Users\Murillo\GameLogParser\C#\QuakeLogParser\obj\Debug\QuakeLogParser.csprojResolveAssemblyReference.cache
+C:\Users\Murillo\GameLogParser\C#\QuakeLogParser\obj\Debug\QuakeLogParser.exe
+C:\Users\Murillo\GameLogParser\C#\QuakeLogParser\obj\Debug\QuakeLogParser.pdb

@@ -10,5 +10,11 @@ namespace QuakeLogParser.Model
     {
         public int id { get; set; }
         public string nome { get; set; }
+
+        public Player()
+        {
+            this.id = 0;
+            this.nome = String.Empty;
+        }
     }
 }
