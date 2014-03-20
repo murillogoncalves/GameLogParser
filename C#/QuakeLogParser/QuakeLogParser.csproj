@@ -32,8 +32,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,6 +49,7 @@
   <ItemGroup>
     <Compile Include="Enum\GameAction.cs" />
     <Compile Include="Enum\MeansOfDeath.cs" />
+    <Compile Include="HandleInfo.cs" />
     <Compile Include="LogParser.cs" />
     <Compile Include="Model\KillsByMean.cs" />
     <Compile Include="Model\Game.cs" />
@@ -55,6 +62,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Assets\games.log" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\ParsedInfo\" />

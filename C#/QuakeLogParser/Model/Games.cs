@@ -8,11 +8,11 @@ namespace QuakeLogParser.Model
 {
     public class Games
     {
-        public List<Game> game { get; set; }
+        public List<Game> games { get; set; }
 
         public Games()
         {
-            this.game = new List<Game>();
+            this.games = new List<Game>();
         }
     }
 }

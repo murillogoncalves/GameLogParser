@@ -8,6 +8,9 @@ namespace QuakeLogParser.Model
 {
     public class Game
     {
+        private static int ID = 0;
+
+        public int id { get; set; }
         public int totalKills { get; set; }
         public List<Player> players { get; set; }
         public List<PlayerKill> playersKills { get; set; }
@@ -15,6 +18,8 @@ namespace QuakeLogParser.Model
 
         public Game()
         {
+            this.id = ++ID;
+
             this.totalKills = 0;
             this.players = new List<Player>();
             this.playersKills = new List<PlayerKill>();

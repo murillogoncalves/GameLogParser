@@ -5,3 +5,5 @@ C:\Users\Murillo\GameLogParser\C#\UnitTest\bin\Debug\QuakeLogParser.pdb
 C:\Users\Murillo\GameLogParser\C#\UnitTest\obj\Debug\UnitTest.csprojResolveAssemblyReference.cache
 C:\Users\Murillo\GameLogParser\C#\UnitTest\obj\Debug\UnitTest.dll
 C:\Users\Murillo\GameLogParser\C#\UnitTest\obj\Debug\UnitTest.pdb
+C:\Users\Murillo\GameLogParser\C#\UnitTest\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Murillo\GameLogParser\C#\UnitTest\bin\Debug\Newtonsoft.Json.xml
