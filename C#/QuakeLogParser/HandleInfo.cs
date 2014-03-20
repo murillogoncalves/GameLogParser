@@ -9,6 +9,7 @@ using QuakeLogParser.Model;
 using System.Data.Linq;
 using QuakeLogParser.Enum;
 using System.Text.RegularExpressions;
+using System.Reflection;
 
 namespace QuakeLogParser
 {
@@ -46,10 +47,11 @@ namespace QuakeLogParser
             //Regex regex = new Regex("/(" + initGame + "|" + clientConnect + "|" + clientUserinfoChanged + "|" + kill + ")/");
 
             //Expressão regular para recuperar ações importantes para o nosso contexto
-            Regex regex = new Regex(@"/(InitGame|ClientConnect|ClientUserinfoChanged|Kill)/");
+            Regex regex = new Regex("(InitGame|ClientConnect|ClientUserinfoChanged|Kill)");
 
             foreach (string row in File.ReadAllLines(logFile, Encoding.UTF8))
             {
+                //Regex regex = new Regex("InitGame");
                 Match action = regex.Match(row);
 
                 switch (action.Value)
@@ -90,6 +92,10 @@ namespace QuakeLogParser
         {
             var json = new JavaScriptSerializer().Serialize(games);
 
+            if (!File.Exists(path))
+            {
+                File.Create(path);
+            }
             File.WriteAllText(path, json, Encoding.UTF8);
         }
 

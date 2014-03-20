@@ -98,7 +98,10 @@ namespace QuakeLogParser
                 //Decrementa mortes de jogador que foi morto por <world>, se existir
                 if (game.playersKills.Any(p => p.player.id == killed.id))
                 {
-                    game.playersKills.Find(k => k.player.id == killed.id).kills--;
+                    if (game.playersKills.Find(k => k.player.id == killed.id).kills > 0)
+                    {
+                        game.playersKills.Find(k => k.player.id == killed.id).kills--;
+                    }
                 }
             }
             else

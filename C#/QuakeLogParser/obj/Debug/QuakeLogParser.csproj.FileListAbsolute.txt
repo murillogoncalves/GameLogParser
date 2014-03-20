@@ -7,3 +7,5 @@ C:\Users\Murillo\GameLogParser\C#\QuakeLogParser\obj\Debug\QuakeLogParser.exe
 C:\Users\Murillo\GameLogParser\C#\QuakeLogParser\obj\Debug\QuakeLogParser.pdb
 C:\Users\Murillo\GameLogParser\C#\QuakeLogParser\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Murillo\GameLogParser\C#\QuakeLogParser\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Murillo\GameLogParser\C#\QuakeLogParser\bin\Debug\Assets\games.log
+C:\Users\Murillo\GameLogParser\C#\QuakeLogParser\bin\Debug\Assets\ParsedInfo\logParsed.txt
